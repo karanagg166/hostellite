@@ -23,6 +23,7 @@ enum AppRoute: Hashable {
     case login
     case otp
     case emailVerification
+    case emailOtp
     case searchCampus
     case joinCampus
     case personalDetails

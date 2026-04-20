@@ -35,6 +35,13 @@ struct HosteloApp: App {
             )
         case .emailVerification:
             EmailVerificationView()
+        case .emailOtp:
+            OTPVerificationView(
+                recipient: onboarding.email,
+                subtitle: "We've sent a 6-digit code to your college email.",
+                progressStep: 4,
+                nextRoute: onboarding.otpNextRoute
+            )
         case .searchCampus:
             SearchCampusView()
         case .joinCampus:

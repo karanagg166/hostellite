@@ -21,7 +21,7 @@ struct SearchCampusView: View {
 
     var body: some View {
         HosteloScreen(spacing: 20) {
-            HosteloTopBar(showBackButton: true, progress: 1)
+            HosteloTopBar(showBackButton: true, progress: 2, totalSteps: 6)
 
             SectionHeader(
                 title: "Search your campus",
@@ -55,7 +55,7 @@ struct SearchCampusView: View {
 
             PrimaryButton(title: "Proceed", disabled: selectedCampus == nil) {
                 onboarding.campus = selectedCampus
-                coordinator.push(.joinCampus)
+                coordinator.push(.emailVerification)
             }
         }
     }

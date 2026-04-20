@@ -13,7 +13,7 @@ struct EmailVerificationView: View {
 
     var body: some View {
         HosteloScreen(spacing: 22) {
-            HosteloTopBar(showBackButton: true)
+            HosteloTopBar(showBackButton: true, progress: 3, totalSteps: 6)
 
             SectionHeader(
                 title: "Verify your email",
@@ -39,7 +39,8 @@ struct EmailVerificationView: View {
 
             PrimaryButton(title: "Proceed", disabled: !isValidEmail) {
                 onboarding.email = email.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-                coordinator.push(.searchCampus)
+                onboarding.otpNextRoute = .personalDetails
+                coordinator.push(.emailOtp)
             }
         }
         .onChange(of: email) { _, newValue in

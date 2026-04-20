@@ -22,7 +22,7 @@ struct OTPVerificationView: View {
 
     var body: some View {
         HosteloScreen {
-            HosteloTopBar(showBackButton: true, progress: progressStep)
+            HosteloTopBar(showBackButton: true, progress: progressStep, totalSteps: 6)
 
             VStack(alignment: .leading, spacing: 10) {
                 Text("Enter the OTP sent to")

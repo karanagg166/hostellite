@@ -22,6 +22,7 @@ enum AppImages {
 
     // MARK: Onboarding
     static let welcomeBanner = "welcome_banner"
+    static let joinCampusBanner = "join_campus_banner"
     static let statusApproved = "status_approved"
     static let statusPending = "status_pending"
 

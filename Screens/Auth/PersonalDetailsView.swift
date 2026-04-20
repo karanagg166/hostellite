@@ -12,11 +12,11 @@ struct PersonalDetailsView: View {
 
     var body: some View {
         HosteloScreen(spacing: 22) {
-            HosteloTopBar(showBackButton: true, progress: 2)
+            HosteloTopBar(showBackButton: true, progress: 5, totalSteps: 6)
 
             SectionHeader(
-                title: "Personal details",
-                subtitle: "Add your full name so we can prepare your hostel request."
+                title: "What's your name?",
+                subtitle: "Enter your full name so we can prepare your hostel request."
             )
 
             if !onboarding.email.isEmpty {

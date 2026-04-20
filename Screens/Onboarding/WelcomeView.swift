@@ -7,7 +7,11 @@ struct WelcomeView: View {
         HosteloScreen(spacing: 28) {
             HosteloTopBar()
 
-            WelcomeIllustration()
+            Image(AppImages.welcomeBanner)
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: .infinity)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
 
             VStack(alignment: .leading, spacing: 4) {
                 Text("Welcome to")

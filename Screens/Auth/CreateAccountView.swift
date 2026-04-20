@@ -23,7 +23,7 @@ struct CreateAccountView: View {
 
             PrimaryButton(title: "Sign up", disabled: !canContinue) {
                 onboarding.phone = HosteloFormatters.limitedPhone(phoneNumber)
-                onboarding.otpNextRoute = .emailVerification
+                onboarding.otpNextRoute = .joinCampus
                 coordinator.push(.otp)
             }
 

@@ -14,7 +14,7 @@ struct HostelSelectionView: View {
 
     var body: some View {
         HosteloScreen(spacing: 20) {
-            HosteloTopBar(showBackButton: true, progress: 3)
+            HosteloTopBar(showBackButton: true, progress: 6, totalSteps: 6)
 
             SectionHeader(
                 title: "Hostel details",
@@ -52,7 +52,7 @@ struct HostelSelectionView: View {
                 onboarding.selectedHostel = selectedHostel
                 onboarding.selectedBlock = selectedBlock
                 onboarding.selectedRoom = selectedRoom
-                onboarding.approvalStatus = .pending
+                onboarding.approvalStatus = .approved
                 coordinator.push(.approvalStatus)
             }
         }

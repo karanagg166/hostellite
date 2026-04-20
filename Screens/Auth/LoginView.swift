@@ -38,14 +38,13 @@ struct LoginView: View {
                 icon: nil
             )
 
-            PrimaryButton(title: "Verify OTP", disabled: !canContinue) {
+            PrimaryButton(title: "Login", disabled: !canContinue) {
                 if HosteloFormatters.limitedPhone(phoneNumber).count == 10 {
                     onboarding.phone = HosteloFormatters.limitedPhone(phoneNumber)
                 } else if isValidEmail {
                     onboarding.email = email.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
                 }
-                onboarding.otpNextRoute = .approvalStatus
-                coordinator.push(.otp)
+                coordinator.push(.dashboard)
             }
 
             AuthDivider(text: "or signup with")
