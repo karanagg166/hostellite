@@ -1,0 +1,5 @@
+Drop custom onboarding illustration PNG/JPG files here.
+
+Suggested starting files:
+- welcome-onboarding.png
+- hostel-room.png

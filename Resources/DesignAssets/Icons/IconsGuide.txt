@@ -1,0 +1,6 @@
+Drop custom icon files here if you want to replace the current built-in symbols.
+
+Examples:
+- custom logo mark
+- custom back arrow
+- custom status icons
