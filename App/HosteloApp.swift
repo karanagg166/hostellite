@@ -56,6 +56,17 @@ struct HosteloApp: App {
             ResidentDashboardView()
         case .requestHelp:
             RequestHelpView()
+        case .profile:
+            ProfileView()
+        case .settings:
+            SettingsView()
+        case .attendance:
+            AttendanceView()
+        case .gatepassForm:
+            GatepassFormView()
+        case .lostFoundForm:
+            LostFoundFormView()
         }
     }
 }
+

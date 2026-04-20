@@ -31,6 +31,11 @@ enum AppRoute: Hashable {
     case approvalStatus
     case dashboard
     case requestHelp
+    case profile
+    case settings
+    case attendance
+    case gatepassForm
+    case lostFoundForm
 }
 
 // MARK: - Navigation Coordinator
